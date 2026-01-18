@@ -113,10 +113,6 @@ lgb_params = {
 loss_function = 'Quantile:alpha=0.5'
 ```
 
-**앙상블:**
-- LightGBM: 40%
-- CatBoost: 60%
-
 ## 성능 개선 히스토리
 
 | 버전 | 방법 | CV | 제출 점수 |
@@ -128,42 +124,9 @@ loss_function = 'Quantile:alpha=0.5'
 | v5 | Y축 증강 | 13.51 | 13.53 |
 | **v6** | **분위수 회귀** | **13.21** | **13.20** |
 
-## 실행 방법
-
-### 환경 설정
-```bash
-pip install numpy pandas scikit-learn lightgbm catboost matplotlib seaborn
-```
-
-### 실행 순서
-```bash
-# 1. EDA
-jupyter notebook 01_EDA.ipynb
-
-# 2. 전처리
-jupyter notebook 02_Preprocessing.ipynb
-
-# 3. 모델링 (최종 제출 파일 생성)
-jupyter notebook 03_Modeling.ipynb
-```
-
-## 참고 자료
-
-- [LightGBM Quantile Regression](https://lightgbm.readthedocs.io/en/latest/Parameters.html)
-- [CatBoost Quantile Loss](https://catboost.ai/docs/concepts/loss-functions-regression.html)
-- [SoccerMap: Deep Learning for Pass Prediction](https://arxiv.org/abs/2010.10202)
-
 ## 향후 개선 방향
 
 1. **Neural Network**: LSTM/Transformer로 시퀀스 모델링
 2. **Pseudo Labeling**: 테스트 예측값으로 재학습
 3. **다중 분위수 앙상블**: q=0.4, 0.5, 0.6 등 여러 분위수 조합
 4. **구역별 모델**: 시작 위치에 따른 개별 모델 학습
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-Made with ⚽ for K-League Data Challenge
