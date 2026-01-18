@@ -1,6 +1,6 @@
 # K리그 패스 도착점 예측 대회
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![LightGBM](https://img.shields.io/badge/LightGBM-4.0+-green.svg)
 ![CatBoost](https://img.shields.io/badge/CatBoost-1.0+-yellow.svg)
 
